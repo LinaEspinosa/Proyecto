@@ -4,15 +4,20 @@
     box-sizing:border-box;
 }
 
+body{
+    background-color:#eeeeee;
+}
 .catalogo > .menu{
-    color:#352825;
+    color:#f95368;
 }
 
 details > .categoria{
-    color:blueviolet;
+    color:#352825;
 }
 
 ol > a{
-    color:red;
+    color:#bdf0f9;
+    text-decoration:none;
+    
     
 }
