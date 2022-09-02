@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.catalogo > .menu{
+    color:#352825;
+}
+
+details > .categoria{
+    color:blueviolet;
+}
+
+ol > a{
+    color:red;
+    
+}
