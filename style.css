@@ -1,23 +1,76 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+
+@font-face {
+    font-family:Mr Sunshine;
+    src:url('./fonts/MrSunshine.otf');
+    font-style: normal;
 }
+
+:root{
+    --colorWhite:#ffffff;
+    --color1:#bdf0f9;
+    --color2:#f95368;
+    --color3:#352825;
+    --color:#eeeeee;
+
+    --fuente1:'Handlee', cursive;
+    --fuente2:Mr Sunshine;
+    --titulos:25px;
+    --subtitulos:20px;
+}
+
 
 body{
-    background-color:#eeeeee;
-}
-.catalogo > .menu{
-    color:#f95368;
+    font-family:var(--fuente1);
+    background-color: var(--colorWhite);
+    display: flex;
+    font-size: var(--subtitulos)
+    
 }
 
-details > .categoria{
-    color:#352825;
+.menu > summary{
+    font-family: var(--fuente2);
+    font-size:var(--titulos);
+    color:var(--color1);
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    height:100vh;
+    width:20vw;
+}
+
+summary{
+    list-style: none;
+    cursor: pointer;
+}
+
+summary:before{
+    content:'';
+    padding-right: 10px;
+    
 }
 
 ol > a{
-    color:#bdf0f9;
+    color:var(--color2);
     text-decoration:none;
+    list-style:circle;
     
     
+}
+
+details[open] > .menu{
+    background-color:var(--color2);
+    color:#FFF;
+    border-radius:5px 5px 0 0;
+}
+
+details[open].helados > summary:before{
+    content: '🍦';
+}
+details[open].bebidas > summary:before{
+    content: '🍹';
 }
