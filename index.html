@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orso-Heladeria</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <details class="menu">
+            <details open class="menu">
                 <summary>Menù</summary>
                 <ol>
 
-                    <details class="catalogo helados">
+                    <details open class="catalogo helados">
                         <summary class="menu">Helados</summary>
                         <ol>
                             <details>
@@ -56,7 +56,7 @@
                     </details>
 
 
-                    <details class="catalogo bebidas">
+                    <details open class="catalogo bebidas">
                         <summary class="menu ">Bebidas</summary>
                         <ol>
                             <details>
@@ -97,6 +97,27 @@
                 </ol>
             </details>
         </nav>
+        <div>
+            <div class="slider">
+                <scroll-container class="slider-container">
+                    <scroll-page class="slider-slide" id="elemento1">
+                        <iframe class="slider-imagen" width="560" height="315"
+                            src="https://www.youtube.com/embed/SE-elWk9xZM?end=25" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen muted></iframe>
+                    </scroll-page>
+                    <scroll-page class="slider-slide" id="elemento2">
+                        <img src="./assets/images/helados/copaHelado.jpeg" alt="conoSencillo">
+
+                    </scroll-page>
+                </scroll-container>
+            </div>
+            <div class="listas-botones">
+                <a class="slider-item" href="#elemento1"></a>
+                <a class="slider-item" href="#elemento2"></a>
+            </div>
+        </div>
     </header>
 </body>
 
